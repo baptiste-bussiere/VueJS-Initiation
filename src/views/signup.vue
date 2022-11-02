@@ -1,7 +1,10 @@
 <template>
+  
+  <signup></signup>
 
-    <signup></signup>
- 
+  
+
+
 
 </template>
 
@@ -10,9 +13,10 @@
 
 import signup from "@/components/sign-up.vue";
 export default {
-  name: "About",
-  components: {
-    signup
-  },
+name: "About",
+components: {
+  signup
+},
 };
 </script>
+

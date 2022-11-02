@@ -1,6 +1,7 @@
 <template>
   
-    <signin></signin>
+    <signinfr></signinfr>
+    
     
  
   
@@ -10,11 +11,11 @@
 <script>
 // @ is an alias to /src
 
-import signin from "@/components/sign-in.vue";
+import signinfr from "@/components/sign-in-fr.vue";
 export default {
   name: "About",
   components: {
-    signin
+    signinfr
   },
 };
 </script>

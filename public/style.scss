@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     font-family: 'Lato', sans-serif;
 }
 
@@ -60,10 +60,6 @@ body {
                 border-radius: 0.3em;
                 padding: 0.3em 0.6em;
                 display: flex;
-                &:first-child {
-                    background-color: #FFF;
-                    box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
-                }
                 img {
                     width: 2em;
                 }
@@ -100,9 +96,14 @@ body {
             width: 2em;
             margin: 0 0.5em;
         }
+        v-text-field {
+            display: flex;
+            width: 100%;
+        }
         input {
             width: 100%;
             padding: 1em;
+            display: flex;
             border: 1px solid #EBECF0;
             border-radius: 0.7em;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
@@ -163,4 +164,51 @@ body {
             background-color: rgb(109, 209, 109);
         }
     }
+}
+
+.gold-mid {
+    background-color: #666666;
+}
+
+.gray-lighter {
+    background-color: #c2c2c2;
+}
+
+.toggle-wrapper {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 18px;
+    border-radius: 9999px;
+}
+
+.toggle-wrapper:focus {
+    outline: 0;
+}
+
+.toggle-background {
+    display: inline-block;
+    border-radius: 9999px;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color .4s ease;
+}
+
+.toggle-indicator {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #ffffff;
+    border-radius: 9999px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform .4s ease;
+}
+
+.active {
+    background-color: #FFF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
 }
