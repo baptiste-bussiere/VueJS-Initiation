@@ -1,23 +1,20 @@
-# demoappp
+# VUE JS INITIATION
 
-## Project setup
+Initation à VueJS, creation d'un formulaire de login/signup
+
+## INSTALLER LES DEPENDENCES
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### LANCER LE PROJET
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### COMPILER POUR LA PRODUCTION 
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
