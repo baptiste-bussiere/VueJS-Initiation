@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
 .box {
@@ -17,6 +19,24 @@ body {
     padding: 2em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
+    .message {
+        background-color: #EBECF0;
+        border-radius: 0.5em;
+        padding: 1em;
+    }
+    .red {
+        background-color: #e45656a4;
+        color: #fff;
+        visibility: visible;
+    }
+    .green {
+        background-color: rgba(109, 209, 109, 0.664);
+        color: #fff;
+        visibility: visible;
+    }
+    .visibility {
+        visibility: hidden;
+    }
     .banner_high {
         display: flex;
         align-items: center;
@@ -27,6 +47,7 @@ body {
         }
         h1 {
             margin: 0.6em;
+            font-weight: 600;
         }
         .language {
             display: flex;
@@ -67,21 +88,34 @@ body {
         display: flex;
         flex-direction: column;
         margin: 0.8em 0;
+        div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
         label {
             margin: 0.2em;
         }
+        img {
+            width: 2em;
+            margin: 0 0.5em;
+        }
         input {
+            width: 100%;
             padding: 1em;
             border: 1px solid #EBECF0;
             border-radius: 0.7em;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
+            background-size: 50px;
         }
         .button_action {
             display: flex;
             flex-direction: row;
+            margin: 0.5em 0;
             button {
                 border: 0;
                 padding: 0.4em 0.8em;
+                margin: 0.2em;
                 background-color: #fff;
                 border: 1px solid #EBECF0;
                 cursor: pointer;
@@ -98,6 +132,9 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        a {
+            color: #000;
+        }
         div {
             input[type=checkbox] {
                 margin: 0 1em;
@@ -107,6 +144,10 @@ body {
     span {
         text-align: center;
         margin: 1em 0;
+        color: #677083;
+        a {
+            color: #000;
+        }
     }
     .password_bar {
         display: flex;

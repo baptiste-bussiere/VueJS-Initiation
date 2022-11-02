@@ -6,5 +6,6 @@ import store from './store'
 
 
 // import font
-import "@/assets/Style.css"
+
+
 createApp(App).use(store).use(router).mount('#app')
