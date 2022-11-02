@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>VueJS initiation</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="count++">
+          Le compteur est a : {{ count }}
+        </button>
+        <p>{{ message }}, {{ abc }}</p>
+
+        <img :src="url_image">
+        <a v-bind:href="url_image">coucou</a>
+        <input v-model="name" type="text" />
+        <div>
+            Nom : {{ name }}
+        </div>
+        <button @click="resetName" type="text">Effacer</button>
+
+
+
+
+
+
+
+
+
+        <script>
+            const {
+                createApp
+            } = Vue
+
+            createApp({
+
+                data() {
+                    return {
+                        count: 0,
+                        message: "coucou",
+                        abc: "ceci est un texte",
+                        url_image: "https://m.media-amazon.com/images/I/31NGHLDFjjL._AC_SL1000_.jpg",
+                        title: "ceci apparait une seul fois",
+                        name: "",
+                        montant: 30
+                    }
+
+                },
+                methods: {
+                    resetName() {
+                        this.abc = ''
+                    }
+                }
+
+            }).mount('#app')
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EBECF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #fff;
+    display: flex;
+    border-radius: 1em;
+    width: 30vw;
+    flex-direction: column;
+    padding: 2em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    .banner_high {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1em 0;
+        img {
+            width: 3em;
+        }
+        h1 {
+            margin: 0.6em;
+        }
+        .language {
+            display: flex;
+            border-radius: 0.5em;
+            background-color: #F9FAFC;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
+            .flag {
+                cursor: pointer;
+                margin: 0.3em;
+                border-radius: 0.3em;
+                padding: 0.3em 0.6em;
+                display: flex;
+                &:first-child {
+                    background-color: #FFF;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
+                }
+                img {
+                    width: 2em;
+                }
+            }
+        }
+    }
+    .log {
+        background-color: #000;
+        padding: 1.4em;
+        color: #fff;
+        border-radius: 0.7em;
+        border: 1px solid #000;
+        transition: 250ms;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #000;
+            background-color: transparent;
+            color: #000;
+        }
+    }
+    .in {
+        display: flex;
+        flex-direction: column;
+        margin: 0.8em 0;
+        label {
+            margin: 0.2em;
+        }
+        input {
+            padding: 1em;
+            border: 1px solid #EBECF0;
+            border-radius: 0.7em;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 0px;
+        }
+        .button_action {
+            display: flex;
+            flex-direction: row;
+            button {
+                border: 0;
+                padding: 0.4em 0.8em;
+                background-color: #fff;
+                border: 1px solid #EBECF0;
+                cursor: pointer;
+                transition: 250ms;
+                &:hover {
+                    background-color: rgb(232, 232, 232);
+                }
+                border-radius: 5em;
+            }
+        }
+    }
+    .check_bar {
+        margin: 1em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div {
+            input[type=checkbox] {
+                margin: 0 1em;
+            }
+        }
+    }
+    span {
+        text-align: center;
+        margin: 1em 0;
+    }
+    .password_bar {
+        display: flex;
+        width: 100%;
+        .bar {
+            width: 25%;
+            height: 6px;
+            background-color: #EBECF0;
+            border-radius: 1em;
+            margin: 6px;
+        }
+        .green {
+            background-color: rgb(109, 209, 109);
+        }
+    }
+}
